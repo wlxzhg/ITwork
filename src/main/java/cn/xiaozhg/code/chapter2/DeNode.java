@@ -1,5 +1,8 @@
 package cn.xiaozhg.code.chapter2;
 
+/**
+ * 双向链表的一个节点
+ * */
 public class DeNode {
     private int val;
     private DeNode next;
@@ -50,6 +53,9 @@ public class DeNode {
         return sb.toString();
     }
 
+    /**
+     * 传入一个数组初始化为一个双向链表
+     * */
     public static DeNode getNodeFromArr(int[] arr) {
         if (arr == null || arr.length == 0) {
             return null;

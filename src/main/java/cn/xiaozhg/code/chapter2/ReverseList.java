@@ -2,6 +2,9 @@ package cn.xiaozhg.code.chapter2;
 
 import org.junit.Test;
 
+/**
+ * 反转链表
+ * */
 public class ReverseList {
     public Node reverseList(Node head) {
         Node dummy = new Node(-1);

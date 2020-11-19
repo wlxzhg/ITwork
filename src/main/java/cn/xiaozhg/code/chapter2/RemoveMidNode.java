@@ -39,6 +39,9 @@ public class RemoveMidNode {
         return removeNthNode(head, index);
     }
 
+    /**
+     * 删除第n个节点
+     * */
     public Node removeNthNode(Node head,int n) {
         if(head == null || n <= 0) {
             return head;
@@ -57,6 +60,9 @@ public class RemoveMidNode {
         return dummy.getNext();
     }
 
+    /**
+     * 求链表长度
+     * */
     public int lenOfNode(Node head) {
         int count = 0;
         Node p = head;

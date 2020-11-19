@@ -1,5 +1,8 @@
 package cn.xiaozhg.code.chapter2;
 
+/**
+ * 单链表的一个节点
+ * */
 public class Node {
     private int val;
     private Node next;
@@ -37,6 +40,9 @@ public class Node {
         return sb.toString();
     }
 
+    /**
+     * 传入一个数组初始化为一个链表
+     * */
     public static Node getNodeFromArr(int[] arr) {
         if (arr == null || arr.length == 0) {
             return null;

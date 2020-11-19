@@ -2,6 +2,9 @@ package cn.xiaozhg.code.chapter2;
 
 import org.junit.Test;
 
+/**
+ * 删除倒数第n个节点
+ * */
 public class DelNthNode {
     public Node delNthNode(Node head,int n) {
         Node dummy = new Node(-1, head);

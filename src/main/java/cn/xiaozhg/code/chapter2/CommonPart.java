@@ -2,6 +2,10 @@ package cn.xiaozhg.code.chapter2;
 
 import org.junit.Test;
 
+/**
+ * 有两个有序链表，求它们的公共部分
+ * 如1->2->3->null和2—>5->null的公共部分为2->null
+ * */
 public class CommonPart {
     public void printCommonPart(Node head1, Node head2) {
         Node p1 = head1,p2 = head2;
