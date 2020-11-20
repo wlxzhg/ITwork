@@ -47,4 +47,23 @@ public class JosephusLoop {
         }
         return p;
     }
+
+    /**
+     * m个小朋友，数到k的出列，下一个再从1开始数，数到k再出列
+     * 最终留下的是谁？
+     * */
+    public int josephusLoop(int m, int k) {
+        //f(n) = (f(n-1)+k-1)%n+1
+        int ans = 1;
+        for(int i = 2; i <= m; i++) {
+            ans = (ans + k - 1) % i + 1;
+        }
+        return ans;
+    }
+
+    @Test
+    public void testJosephusLoop() {
+        JosephusLoop obj = new JosephusLoop();
+        System.out.println(obj.josephusLoop(4, 3));
+    }
 }
